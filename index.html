@@ -10,9 +10,9 @@
 </head>
 <body>
 <form id="registration-form">
-    <div class="bg-gray-400 h-screen flex justify-center items-center">
+    <div class="flex item-center justify-center h-screen bg-gary-400">
 
-        <div class="bg-white rounded shadow-lg p-6 w-1/3" id="my-form">
+        <div class="w-1/3 p-6 bg-white rounded shadow-lg" id="my-form">
 
             <div class="my-4">
                 <label for="username">Username</label>
@@ -30,6 +30,15 @@
                        class="base-input"
                 >
             </div>
+            <div class="m-4">
+                <label for="email">Email</label>
+                <input type="text" id"email" name="email" placeholder="me@domain.com"
+                class="base input"
+                >
+                <small class="hidden">Please enter your email</small>
+                <small class="hidden">Success</small>
+
+            </div>
 
             <div class="my-4">
                 <label for="password">Password</label>
@@ -37,11 +46,18 @@
             </div>
 
             <div class="my-4">
-                <label for="password-2">Confirm Password</label>
-                <input type="password" id="password-2" name="password-2" class="base-input">
-            </div>
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" class="base-input">
 
-            <button class="bg-green-200 p-3 w-full">Register Now</button>
+                <small class="hidden">Please enter your email</small>
+                <small class="hidden">Success</small>
+
+            </div>
+<div class="m-4">
+    <label for="password-2">Confirm password</label>
+    <input type="password" id="password-2" name="password-2" class="base-input">
+</div>
+            <button class="full p-3bg-green-200 p-3 w-full">Register Now</button>
 
         </div>
 
